@@ -5,7 +5,7 @@ Admin se prijavljuje i može kreirati/uređivati/brisati postove; čitatelji či
 
 ## Pokretanje
 
-**Backend**
+Backend
 ```bash
 python -m uvicorn backend.main:app --reload --port 8000
 
