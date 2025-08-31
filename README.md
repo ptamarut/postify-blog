@@ -1,14 +1,35 @@
 # ✍️ Postify
 
-Privatni blog: **FastAPI** (backend) + **Streamlit** (frontend).  
-Admin se prijavljuje i može kreirati/uređivati/brisati postove; čitatelji čitaju i pretražuju (filtriranje + semantičko).
+**Postify** je privatni blog razvijen u Pythonu.  
+Backend pokreće **FastAPI**, frontend je izrađen u **Streamlitu**, a podaci se pohranjuju u **SQLite** bazu putem **SQLAlchemy ORM-a**.  
 
-## Pokretanje
+🔑 **Administrator** (nakon prijave) može:  
+- kreirati nove objave  
+- uređivati postojeće  
+- brisati objave  
 
-Backend
+👥 **Čitatelji** mogu:  
+- pregledavati sve objave  
+- filtrirati po kategoriji ili naslovu  
+- koristiti **semantičko pretraživanje** (SentenceTransformers)  
+
+---
+
+## 🚀 Tehnologije
+
+- [FastAPI](https://fastapi.tiangolo.com/) – brzi Python framework za API-je  
+- [Streamlit](https://streamlit.io/) – jednostavan frontend framework  
+- [SQLite](https://www.sqlite.org/index.html) – lagana baza podataka  
+- [SQLAlchemy](https://www.sqlalchemy.org/) – ORM za rad s bazom  
+- [JWT](https://jwt.io/) – autentikacija i autorizacija admina  
+- [SentenceTransformers](https://www.sbert.net/) – semantičko pretraživanje  
+
+---
+
+## ▶️ Pokretanje projekta
+
+### 1. Backend (FastAPI)
+Pokreni server iz root mape projekta:
+
 ```bash
 python -m uvicorn backend.main:app --reload --port 8000
-
-**Frontend**
-
-streamlit run frontend/streamlit_app.py
