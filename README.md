@@ -28,8 +28,15 @@ Backend pokreće **FastAPI**, frontend je izrađen u **Streamlitu**, a podaci se
 
 ## ▶️ Pokretanje projekta
 
-### 1. Backend (FastAPI)
-Pokreni server iz root mape projekta:
+Pokreni backend i frontend iz root mape projekta:
 
 ```bash
+# Backend (FastAPI)
 python -m uvicorn backend.main:app --reload --port 8000
+
+# Frontend (Streamlit)
+streamlit run frontend/streamlit_app.
+
+```bash
+streamlit run frontend/streamlit_app.py
+
