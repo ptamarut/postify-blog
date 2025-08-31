@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic>=2
+python-multipart
+pillow
+numpy
+sentence-transformers
+requests
+streamlit
+passlib[bcrypt]
+python-jose[cryptography]
+python-dateutil
